@@ -12,12 +12,12 @@ import javax.persistence.Id;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-class Film {
+public class Film {
     @Id
     private String title;
     private FilmType type;
 
-    FilmDto dto() {
+    public FilmDto dto() {
         return FilmDto.builder()
                 .title(title)
                 .type(type.dto())

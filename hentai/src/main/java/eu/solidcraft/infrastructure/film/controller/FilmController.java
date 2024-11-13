@@ -1,6 +1,6 @@
-package eu.solidcraft.film;
+package eu.solidcraft.infrastructure.film.controller;
 
-import eu.solidcraft.film.domain.FilmFacade;
+import eu.solidcraft.application.film.facade.FilmFacade;
 import eu.solidcraft.film.dto.FilmDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
