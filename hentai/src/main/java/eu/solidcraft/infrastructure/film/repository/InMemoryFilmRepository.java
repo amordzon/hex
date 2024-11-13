@@ -1,5 +1,7 @@
-package eu.solidcraft.film.domain;
+package eu.solidcraft.infrastructure.film.repository;
 
+import eu.solidcraft.film.domain.Film;
+import eu.solidcraft.film.domain.FilmBaseRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -9,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.requireNonNull;
 
-class InMemoryFilmRepository implements FilmRepository {
+public class InMemoryFilmRepository implements FilmBaseRepository {
     private ConcurrentHashMap<String, Film> map = new ConcurrentHashMap<>();
 
     @Override

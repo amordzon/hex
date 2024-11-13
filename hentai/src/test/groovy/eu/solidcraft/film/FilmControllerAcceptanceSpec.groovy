@@ -1,7 +1,7 @@
 package eu.solidcraft.film
 
 import eu.solidcraft.base.IntegrationSpec
-import eu.solidcraft.film.domain.FilmFacade
+import eu.solidcraft.application.film.facade.FilmFacade
 import eu.solidcraft.film.domain.SampleFilms
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.test.context.support.WithMockUser

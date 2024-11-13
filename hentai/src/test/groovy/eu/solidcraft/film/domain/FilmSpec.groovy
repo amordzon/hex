@@ -1,8 +1,9 @@
 package eu.solidcraft.film.domain
 
+import eu.solidcraft.application.film.facade.FilmFacade
 import eu.solidcraft.film.dto.FilmDto
 import eu.solidcraft.film.dto.FilmNotFoundException
-import eu.solidcraft.film.dto.FilmTypeDto
+import eu.solidcraft.infrastructure.film.configuration.FilmConfiguration
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageRequest
 import spock.lang.Specification
